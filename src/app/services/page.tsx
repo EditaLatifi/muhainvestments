@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Services() {
   return (
-    <div className="bg-white md:mt-[120px] mt-[100px]">
+<div className="bg-white md:mt-[140px] mt-[100px] md:space-y-[100px] space-y-[60px]">
       {/* HERO */}
       <section className="relative bg-gradient-to-r from-[#050a30] via-[#0a1440] to-[#233dff] text-white py-24 text-center">
         <motion.h1
