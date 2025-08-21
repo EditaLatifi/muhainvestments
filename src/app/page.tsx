@@ -99,7 +99,7 @@ function Counter({ target, label }: { target: number; label: string }) {
   }, []);
 
   return (
-    <div className="bg-gradient-to-br from-[#050a30] via-[#0a1440] to-[#233dff] text-white min-h-screen pt-20 relative">
+    <div className="bg-gradient-to-br from-[#050a30] via-[#0a1440] to-[#233dff] text-white min-h-screen pt-20 relative ">
       {/* === HERO === */}
       <section className="relative flex flex-col items-center justify-center text-center min-h-screen overflow-hidden">
         <motion.h1
@@ -208,7 +208,7 @@ function Counter({ target, label }: { target: number; label: string }) {
     </div>
   </div>
 {/* Bottom Stats / Highlights */}
-<div className="mt-20 grid md:grid-cols-3 gap-8 text-center">
+<div className="mt-20 max-w-7xl mx-auto grid md:grid-cols-3 gap-8 text-center">
   {/* Years of Experience */}
   <div className="p-8 bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 border-t-4 border-[#3b44f6]">
     <h3 className="text-5xl font-extrabold text-[#3b44f6] mb-3">4+</h3>
