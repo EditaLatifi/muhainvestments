@@ -9,9 +9,15 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-  title: "Muha Investiments",
-  description: "Property Development & Transport in Malawi",
+  title: "Muha Investments",
+  description: "Building the future of transport & development in Malawi.",
+  icons: {
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
 };
+
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
