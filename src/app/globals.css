@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #233dff;
+  --dark: #050a30;
+}
+.font-sans {
+  font-family: var(--font-montserrat), sans-serif;
+}
+
