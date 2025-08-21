@@ -1,5 +1,5 @@
 "use client";
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 
@@ -59,7 +59,6 @@ function Counter({ target, label }: { target: number; label: string }) {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    let start = 0;
     const duration = 2000; // 2 seconds
     const startTime = performance.now();
 
@@ -180,11 +179,13 @@ function Counter({ target, label }: { target: number; label: string }) {
   <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
     {/* Left Side Image */}
     <div>
-      <img
-        src="/blantyre_large.jpg" // replace with your image path
-        alt="Company Building"
-        className="rounded-2xl shadow-lg"
-      />
+   <Image
+  src="/blantyre_large.jpg" // replace with your actual image path
+  alt="Company Building"
+  width={1200} // set appropriate width
+  height={800} // set appropriate height
+  className="rounded-2xl shadow-lg object-cover"
+/>
     </div>
 
     {/* Right Side Text */}
