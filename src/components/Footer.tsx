@@ -1,5 +1,6 @@
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -21,15 +22,31 @@ export default function Footer() {
         </div>
 
         {/* Menu */}
-        <div>
-          <h3 className="font-semibold text-lg mb-3">Menu</h3>
-          <ul className="space-y-2 text-gray-300">
-            <li><a href="/" className="hover:text-[#3b44f6] transition">Home</a></li>
-            <li><a href="/services" className="hover:text-[#3b44f6] transition">Services</a></li>
-            <li><a href="/about" className="hover:text-[#3b44f6] transition">About Us</a></li>
-            <li><a href="/contact" className="hover:text-[#3b44f6] transition">Contact</a></li>
-          </ul>
-        </div>
+   <div>
+  <h3 className="font-semibold text-lg mb-3">Menu</h3>
+  <ul className="space-y-2 text-gray-300">
+    <li>
+      <Link href="/" className="hover:text-[#3b44f6] transition">
+        Home
+      </Link>
+    </li>
+    <li>
+      <Link href="/services" className="hover:text-[#3b44f6] transition">
+        Services
+      </Link>
+    </li>
+    <li>
+      <Link href="/about" className="hover:text-[#3b44f6] transition">
+        About Us
+      </Link>
+    </li>
+    <li>
+      <Link href="/contact" className="hover:text-[#3b44f6] transition">
+        Contact
+      </Link>
+    </li>
+  </ul>
+</div>
 
         {/* Contact Info */}
         <div>
