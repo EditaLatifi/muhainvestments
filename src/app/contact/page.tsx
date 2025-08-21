@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function Contact() {
   return (
-    <div className="bg-white md:mt-[120px] mt-[100px]">
+<div className="bg-white md:mt-[140px] mt-[100px] md:space-y-[100px] space-y-[60px]">
       {/* HERO */}
       <section className="bg-gradient-to-r from-[#050a30] to-[#233dff] text-white py-20 text-center px-6">
         <motion.h1
@@ -94,14 +94,13 @@ export default function Contact() {
 
       {/* GOOGLE MAPS */}
       <section className="w-full h-[400px]">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.123456789!2d34.9856!3d-15.7861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x000000000000000%3A0x000000000000000!2sBlantyre%2C%20Malawi!5e0!3m2!1sen!2smw!4v1700000000000!5m2!1sen!2smw"
-          width="100%"
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122864.82378273786!2d35.03076555!3d-15.7762085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18d84513cbc0005f%3A0x236358dae4d811e6!2sBlantyre%2C%20Malawi!5e0!3m2!1sen!2s!4v1755776051836!5m2!1sen!2s"  width="100%"
           height="100%"
           allowFullScreen={true}
           loading="lazy"
-          className="border-0"
-        ></iframe>
+          className="border-0">
+
+          </iframe>
       </section>
     </div>
   );
